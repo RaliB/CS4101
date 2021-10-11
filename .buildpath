@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="agvoy-app/config"/>
+	<buildpathentry kind="src" path="agvoy-app/public"/>
+	<buildpathentry kind="src" path="agvoy-app/src"/>
+	<buildpathentry kind="src" path="agvoy-app/tests"/>
+	<buildpathentry kind="src" path="agvoy-app/var/cache/dev"/>
+	<buildpathentry kind="src" path="agvoy-app/vendor"/>
+	<buildpathentry kind="src" path="vendor"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>

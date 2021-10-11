@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+ {% block body %}
+ 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<br>
+
+<div class="container">
+
+
+<div class="row justify-content-center">
+<div class="col-md-6">
+<div class="card">
+<header class="card-header">
+	<a href="/Connexion" class="float-right btn btn-outline-primary mt-1">Se Connecter</a>
+	<h4 class="card-title mt-2">S'inscrire</h4>
+</header>
+<article class="card-body">
+
+
+
+<form href="{{ path('inscription')}} , method='post'">
+	<div class="form-row">
+		<div class="col form-group">
+			<label>Prenom </label>   
+		  	<input name='prenom' type="text" class="form-control" placeholder="Entrez votre prénom">
+		</div> <!-- form-group end.// -->
+		<div class="col form-group">
+			<label>Nom</label>
+		  	<input name='nom'type="text" class="form-control" placeholder="Entrez votre nom">
+		</div> <!-- form-group end.// -->
+	</div> <!-- form-row end.// -->
+	<div class="form-group">
+		<label>Adresse mail</label>
+		<input name='email 'type="email" class="form-control" placeholder="">
+	</div> <!-- form-group end.// -->
+	<div class="form-group">
+			
+	</div> <!-- form-group end.// -->
+	<div class="form-row">
+		<div class="form-group col-md-6">
+		</div> <!-- form-group end.// -->
+		
+	</div> <!-- form-row.// -->
+	<div class="form-group">
+		<label>Mot de Passe</label>
+	    <input name='mdp'class="form-control" type="password">
+	</div> <!-- form-group end.// -->  
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> S'inscrire  </button>
+    </div> <!-- form-group// -->      
+    <small class="text-muted">En cliquant sur le bouton « S'inscrire », vous confirmez que vous acceptez <br>nos conditions d'utilisation et notre politique de confidentialité.</small>                                          
+</form>
+
+</article> <!-- card-body end .// -->
+<div class="border-top card-body text-center">Vous avez déjà un compte ? <a href="/Connexion">Se connecter</a></div>
+</div> <!-- card.// -->
+</div> <!-- col.//-->
+
+</div> <!-- row.//-->
+
+
+</div> 
+<!--container end.//-->
+<br>
+ <br>
+ {% endblock %}

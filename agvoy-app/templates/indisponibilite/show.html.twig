@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Indisponibilite{% endblock %}
+
+{% block body %}
+    <h1>Indisponibilite</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ indisponibilite.id }}</td>
+            </tr>
+            <tr>
+                <th>Datedebut</th>
+                <td>{{ indisponibilite.datedebut ? indisponibilite.datedebut|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Datefin</th>
+                <td>{{ indisponibilite.datefin ? indisponibilite.datefin|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('indisponibilite_index') }}">back to list</a>
+
+    <a href="{{ path('indisponibilite_edit', {'id': indisponibilite.id}) }}">edit</a>
+
+    {{ include('indisponibilite/_delete_form.html.twig') }}
+{% endblock %}

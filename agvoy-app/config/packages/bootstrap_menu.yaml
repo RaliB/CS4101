@@ -1,0 +1,16 @@
+bootstrap_menu:
+  menus:
+    main:
+      items:
+        accueil:
+          label: 'Accueil'
+          route: 'home'
+        annonces:
+          label: 'Annonces'
+          route: 'annonces'
+        inscription:
+          label: 'Inscription'
+          route: 'inscription'
+        connexion:
+          label: 'Connexion'
+          route: 'connexion'
